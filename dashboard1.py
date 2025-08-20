@@ -13,7 +13,7 @@ df = pd.read_excel('dashboardexample1.xlsx')
 # Initialize the Dash app
 app = dash.Dash(__name__)
 
-# Create a simple line chart
+# Create a simple bar chart
 fig = px.bar(df, x='Team', y='Crowd', title='Average Attendance')
 # For a line chart, you can use:
 # fig = px.line(df, x='Team', y='Crowd', title='Average Attendance')
